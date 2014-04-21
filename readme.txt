@@ -3,7 +3,7 @@ Contributors: ENDif Media
 Tags: rss,wordpress,mailchimp
 Donate link: www.endifmedia.com/rss-with-images
 Requires at least: 3.7
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,8 @@ Q:What are the Differences in encoding types?
 == Changelog ==
 = v1  2014/2/24 = 
 * Added support for character type.
+= v1.01 2014/2/14
+* Added support for WP version 3.9
 
 == Upgrade Notice ==
 Upgrading is important!
