@@ -30,8 +30,10 @@ Q:What are the Differences in encoding types?
 == Changelog ==
 = v1  2014/2/24 = 
 * Added support for character type.
-= v1.01 2014/2/14
+= v1.01 2014/4/21
 * Added support for WP version 3.9
+= v1.02 2014/4/24
+* Removed wptexturize filter from RSS content and title
 
 == Upgrade Notice ==
 Upgrading is important!
