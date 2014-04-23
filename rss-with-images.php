@@ -152,6 +152,7 @@ function rwi_em_options_page(){
  */
 function rwi_em_feed_rss2(){
 	remove_filter('the_title', 'wptexturize');
+	remove_filter('the_content', 'wptexturize');
 	if( $feed_template = locate_template( 'mailchimp-feed-rss2.php' ) ){
 		load_template( $feed_template );
 	} else {
