@@ -188,6 +188,9 @@ function rwi_em_options_page(){
 		  <p class="submit">
 		   <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 		  </p>
+		  <div class="alert alert-warning">
+		    <strong>Hey there!</strong> If you enjoy this plugin, please <a href="http://wordpress.org/support/view/plugin-reviews/rss-with-images">rate it!</a>
+		  </div>
 		</form>
 	</div>
 <?php }
