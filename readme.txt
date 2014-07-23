@@ -33,8 +33,8 @@ Q:What are the Differences in encoding types?
      A: Refer to http://www.w3.org/TR/REC-xml/ for more information on xml
 
 == Screenshots ==
-1. Here is a screenshot of the Settings Page. The options form is simple to use.
-2. To access the RSS with Images Settings Page, click Settings > RSS with Images.
+1. To access the RSS with Images Settings Page, click Settings > RSS with Images.
+2. Here is a screenshot of the Settings Page. The options form is simple to use.
 
 == Changelog ==
 
