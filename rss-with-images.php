@@ -7,28 +7,74 @@
  Plugin Name: RSS with Images
  Plugin URI: www.endifmedia.com/rss-with-images
  Description: Seamlessly add featured images to your Mailchimp RSS to Email campaigns. 
- Version: 1.0
  Author: ENDif Media
+ Version: 1.1
  Author URI: www.endifmedia.com
  License: GPLv2
  */
 
 /*
- This plugin is free software; you can redistribute it and/or modify 
- it under the terms of the GNU General Public License as published by 
- the Free software Foundation; either version 2 of the License, or 
- (at your option) any later version.
+	 This plugin is free software; you can redistribute it and/or modify 
+	 it under the terms of the GNU General Public License as published by 
+	 the Free software Foundation; either version 2 of the License, or 
+	 (at your option) any later version.
 
- This plugin is distributed in the hope that it will be useful, 
- but WITHOUT ANY WARRANTY; without even the implied warranty of 
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
- GNU General Public License for more details.
+	 This plugin is distributed in the hope that it will be useful, 
+	 but WITHOUT ANY WARRANTY; without even the implied warranty of 
+	 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+	 GNU General Public License for more details.
 
- For a copy of the GNU General Public License write to the Free
- Software Foundation, Inc., 51 Franklin St, Fifth Floor, 
- Boston, Ma 02110-1301 USA
+	 For a copy of the GNU General Public License write to the Free
+	 Software Foundation, Inc., 51 Franklin St, Fifth Floor, 
+	 Boston, Ma 02110-1301 USA
 */
 
+/**
+ * ADD LINKS UNDER PLUGIN TITLE
+ *
+ */
+function rwi_em_add_under_title_links( $links ) {
+	return array_merge(
+		array(
+			'settings' => '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/options-general.php?page=rss-with-images">Settings</a>'
+		),
+		$links
+	);
+}
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'rwi_em_add_under_title_links' );
+
+/**
+ * ADD LINKS UNDER PLUGIN DESCRIPTION
+ *
+ */
+function rwi_em_add_under_description_links( $links, $file ) {
+	$plugin = plugin_basename(__FILE__);
+	// create link
+	if ( $file == $plugin ) {
+		return array_merge(
+			$links,
+				array( '<a href="http://wordpress.org/support/view/plugin-reviews/rss-with-images" target=_blank>Rate this plugin</a>' )
+		);
+	}
+	return $links;
+}
+add_filter( 'plugin_row_meta', 'rwi_em_add_under_description_links', 10, 2 );
+
+/**
+ * ADD CSS TO SETTINGS PAGE ONLY
+ *
+ */
+function rwi_em_admin_css() {
+ //get current screen
+ $screen_page = get_current_screen();
+	
+ //add plugin css ONLY to settings page
+ if( 'settings_page_rss-with-images' == $screen_page->id ){
+   wp_enqueue_style( 'rwi-admin-css', plugins_url( 'css/plugin-styles.css', __FILE__ ),'20140605', false );
+ }
+
+}
+add_action( 'admin_enqueue_scripts', 'rwi_em_admin_css' );
 
 /** 
  * REGISTER SETTINGS PAGE
@@ -148,11 +194,20 @@ function rwi_em_options_page(){
 	
 /**
  * SET NEW TEMPLATE FOR RSS EMAIL
+ *
+ * Remove WP Texturize
+ * Add NEW rss template, leave the original intact.
  *  
+ * @since Version 1.1  ( remove_filter('the_title', 'wptexturize'); )
+ * @since Version 1.1  ( remove_filter('the_content', 'wptexturize'); )
  */
 function rwi_em_feed_rss2(){
+	//Added in Version 1.1 - Removes display bug in MS OFFICE
 	remove_filter('the_title', 'wptexturize');
+
+	//Added in Version 1.1 - Removes display bug in MS OFFICE
 	remove_filter('the_content', 'wptexturize');
+
 	if( $feed_template = locate_template( 'mailchimp-feed-rss2.php' ) ){
 		load_template( $feed_template );
 	} else {

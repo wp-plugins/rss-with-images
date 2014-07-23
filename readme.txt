@@ -1,19 +1,26 @@
 === RSS with Images ===
 Contributors: ENDif Media
-Tags: rss,wordpress,mailchimp
-Donate link: www.endifmedia.com/rss-with-images
+Tags: rss, rss feed,featured image, Mailchimp, featured images, thumbnails
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eaallen%40iupui%2eedu&lc=US&item_name=Donate%20to%20Ethan%20Allen%20Reference%3a%20RSS%20with%20Images%20WordPress%20plugin&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Seamlessly add featured images to your Mailchimp RSS to Email campaigns.
+Seamlessly adds featured images to your RSS feed with customizable sizing options.
 
 == Description ==
 
-RSS with Images allows you to add images to your Mailchimp RSS to email campaigns with minimal effort. The plugin allows you to set the xml encoding as well (the default setting is UTF-8). 
-For more information visit www.endifmedia.com/rss-with-images
+A simple and easy way to add featured images in your site's RSS feed with customizable sizing options.
+
+Works great with Mailchimp's RSS-to-Email campaigns, allowing you to be more creative and get the most value from your email newsletters. You can even set the xml encoding of your RSS feed. (the default setting is UTF-8). 
+
+For more information about this plugin, the developer, or ENDif Media visit www.endifmedia.com/rss-with-images.
+
+[Rate this plugin](http://wordpress.org/support/view/plugin-reviews/rss-with-images?filter=5#postform), I would LOVE the feedback!
+
+ENJOY!
 
 == Installation ==
 1. Simply download the plugin and install.
@@ -26,14 +33,19 @@ Q:What are the Differences in encoding types?
      A: Refer to http://www.w3.org/TR/REC-xml/ for more information on xml
 
 == Screenshots ==
+1. Here is a screenshot of the Settings Page. The options form is simple to use.
+2. To access the RSS with Images Settings Page, click Settings > RSS with Images.
 
 == Changelog ==
-= v1  2014/2/24 = 
-* Added support for character type.
-= v1.01 2014/4/21
-* Added support for WP version 3.9
-= v1.02 2014/4/24
+
+= 1.1 =
 * Removed wptexturize filter from RSS content and title
+* Added support for WP version 3.9
+
+= 1.0 = 
+* First release.
 
 == Upgrade Notice ==
-Upgrading is important!
+
+= 1.1 =
+Fixes a content display issue with Microsoft Outlook.
