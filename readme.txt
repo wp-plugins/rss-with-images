@@ -16,7 +16,7 @@ A simple and easy way to add featured images in your site's RSS feed with custom
 
 Works great with Mailchimp's RSS-to-Email campaigns, allowing you to be more creative and get the most value from your email newsletters. You can even set the xml encoding of your RSS feed. (the default setting is UTF-8). 
 
-For more information about this plugin, the developer, or ENDif Media visit www.endifmedia.com/rss-with-images.
+For more information about this plugin, the developer, or ENDif Media visit endif.media/rss-with-images.
 
 [Rate this plugin](http://wordpress.org/support/view/plugin-reviews/rss-with-images?filter=5#postform), I would LOVE the feedback!
 
