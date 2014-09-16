@@ -151,7 +151,9 @@ function rwi_em_options_page(){
     echo "<h2>" . __( 'RSS with Images - settings', '' ) . 
     "</h2><br><p>" . __( 'Here you can set the height and width of the images you want to appear in your RSS feed.<br>
       Log into Mailchimp, find your email template, view the image size requirements, and set them here. <br>
-      The plugin will use these values to hard crop the uploaded image and get it ready for your feeds!<br>') ."</p>";
+      The plugin will use these values to hard crop the uploaded image and get it ready for your feeds!<br>
+      <span style="font-weight:bold;color:#A7A6A6;font-size:11px">* Featured Images already in the media library 
+      (prior to plugin installation) WILL NOT be added to your rss feed.<br> You will need to delete them and re-upload.</span>') ."</p>";
 
 ?>
 		<form id="rss-with-images-options" method="post" action="">
