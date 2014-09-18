@@ -9,7 +9,7 @@
  Description: Seamlessly add featured images to your Mailchimp RSS to Email campaigns. 
  Author: ENDif Media
  Version: 1.1
- Author URI: www.endifmedia.com
+ Author URI: endif.media
  License: GPLv2
  */
 
