@@ -5,7 +5,7 @@
   */
  /*
  Plugin Name: RSS with Images
- Plugin URI: www.endifmedia.com/rss-with-images
+ Plugin URI: www.endifmedia.com/portfolio/rss-with-images
  Description: Seamlessly add featured images to your Mailchimp RSS to Email campaigns. 
  Author: ENDif Media
  Version: 1.1
