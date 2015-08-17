@@ -4,7 +4,7 @@ Tags: rss, rss feed,featured image, Mailchimp, featured images, thumbnails
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eaallen%40iupui%2eedu&lc=US&item_name=Donate%20to%20Ethan%20Allen%20Reference%3a%20RSS%20with%20Images%20WordPress%20plugin&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,15 @@ Q:What are the Differences in encoding types?
 2. To access the RSS with Images Settings Page, click Settings > RSS with Images.
 
 == Changelog ==
+
+= 1.3. =
+* Security Updates
+* Added Support for WP version 4.2.4
+
+= 1.2 =
+* Security Updates 
+* Feed template updated
+* Added Support for WP version 4.1
 
 = 1.1 =
 * Removed wptexturize filter from RSS content and title
