@@ -1,0 +1,46 @@
+.alert-info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #31708f;
+}
+.alert-warning {
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+	width: 42%;
+}
+.alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.rwi-ad-banner {
+	border: 1px solid transparent; 
+	display: block; 
+	background-color: #79B5D2;
+	font-weight: 900;
+	margin-bottom: 1.5em;
+}
+.rwi-ad-banner p { 
+	margin:20px;
+	font-size: 1.3em;
+	color: white;
+	float: left;
+}
+.rwi-ad-banner img { 
+	margin-top: 4px;
+}
+
+/* media queries */
+@media (max-width: 1390px) {
+	.rwi-ad-banner {
+	    text-align: center;
+	}
+	.rwi-ad-banner p { 
+		float: none !important;
+	}
+	.rwi-ad-banner img { 
+		max-width: 100%;
+	}
+}
